@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy 3rd Monthsary, Bambi ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+:root {
+  --card-light: rgba(255,255,255,0.94);
+  --card-dark: rgba(24,24,32,0.94);
+  --text-light: #2a2a2a;
+  --text-dark: #f1f1f1;
+  --accent: #a23a5f;
+}
+
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--text-light);
+  overflow-x: hidden;
+  transition: all 0.6s ease;
+}
+
+/* 🌅🌙 BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(246,221,226,0.75), rgba(251,242,244,0.85)),
+    url("bambi-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(6px);
+  z-index: 0;
+}
+
+body.night::before {
+  background:
+    linear-gradient(180deg, rgba(14,14,20,0.85), rgba(27,27,36,0.9)),
+    url("bambi-bg.jpg");
+  filter: blur(8px) brightness(0.8);
+}
+
+body.night {
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 70px 24px 100px;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 55px;
+}
+
+.card {
+  background: var(--card-light);
+  padding: 52px;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  line-height: 2.15;
+  font-size: 1.12em;
+}
+
+body.night .card {
+  background: var(--card-dark);
+}
+
+.card p {
+  margin-bottom: 26px;
+  text-align: justify;
+}
+
+.card p:first-child::first-letter {
+  font-size: 3.4em;
+  font-weight: 600;
+  float: left;
+  line-height: 1;
+  padding-right: 10px;
+  color: var(--accent);
+}
+
+.signature {
+  margin-top: 50px;
+  font-style: italic;
+}
+
+.signature strong {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+}
+
+.divider {
+  text-align: center;
+  margin: 80px 0 40px;
+  letter-spacing: 0.4em;
+  opacity: 0.6;
+}
+
+.video-section {
+  text-align: center;
+}
+
+.video-section h2 {
+  font-weight: 400;
+  margin-bottom: 26px;
+  color: var(--accent);
+}
+
+iframe.video {
+  width: 100%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 22px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+/* ❤️ Hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 18px;
+  color: rgba(200,70,100,0.4);
+  animation: floatUp linear forwards;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0) scale(1); opacity: 1; }
+  to { transform: translateY(-120vh) scale(1.6); opacity: 0; }
+}
+
+/* 💌 Secret Message */
+#secretMessage {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+  z-index: 5;
+}
+
+#secretMessage.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.secretCard {
+  background: rgba(255,255,255,0.96);
+  padding: 40px 46px;
+  border-radius: 26px;
+  font-size: 1.4em;
+  text-align: center;
+  color: var(--accent);
+}
+
+body.night .secretCard {
+  background: rgba(24,24,32,0.96);
+  color: #f1f1f1;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+button {
+  border: none;
+  border-radius: 40px;
+  padding: 12px 16px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<iframe id="music"
+src="https://www.youtube.com/embed/slva-QsmjL4?autoplay=1&mute=1&loop=1&playlist=slva-QsmjL4"
+style="display:none;" allow="autoplay"></iframe>
+
+<div class="container">
+<h1>Happy 3rd Monthsary, Bambi ❤️</h1>
+
+<div class="card">
+<p>Bambi, happy third monthsary! We may not be able to see each other and celebrate our wonderful day together, but as always, you are in my heart, always, my wife.</p>
+
+<p>It's only been three months and yet it feels like we had already been together for so long. Who knew I would be able to find someone like you? Who deeply resonates with my soul—oh baby, I want to really spend the rest of my life with you.</p>
+
+<p>And I know deep within my soul that you are someone I would work things out in lagi. That even if I had faults and you had faults, we won't be sawa to forgive each other every time because of our love for each other.</p>
+
+<p>All the things that we are going through, I just know that it is the Lord's way of strengthening what we have, and it is something that we will always keep within us. I have prayed for you. Talked to the Lord about you.</p>
+
+<p>We may be so far away, and I want you to remember in those times when it is really hard, my prayers hug you when my arms can't. This love of ours is a sentiment for the Lord in His love for us too, and I will forever be grateful.</p>
+
+<p>Bambi, in these three months that we have each other, I have looked at you in millions of ways and I have loved you in each. To our future together, I want you to know that nothing you become will disappoint me.</p>
+
+<p>I have no preconception that I'd like to see you be or do. I have no desire to foresee you, only to discover you. Always.</p>
+
+<p>I love you. I fear you don't comprehend the depth of my own sentiment. My words will forever fall short. You are everything to me, and I have run out of ways to say this.</p>
+
+<p><strong>Ti amo, Bambi. ❤️</strong></p>
+
+<div class="signature">
+Your love, your baby girl,
+<strong>Sheme</strong>
+</div>
+</div>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<div class="video-section">
+<h2>I want to commemorate you this song for our third monthsary 🎶</h2>
+<iframe class="video" src="https://www.youtube.com/embed/slva-QsmjL4"></iframe>
+</div>
+</div>
+
+<div id="secretMessage">
+<div class="secretCard">
+<p>Bambi! Bambi ko, mahal na mahal kita! ❤️</p>
+</div>
+</div>
+
+<div class="controls">
+<button onclick="document.body.classList.toggle('night')">🌙</button>
+<button onclick="toggleMusic()">🔊</button>
+</div>
+
+<script>
+let muted = true;
+let heartClicks = 0;
+
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (8 + Math.random() * 5) + "s";
+  heart.onclick = () => {
+    heartClicks++;
+    if (heartClicks >= 5)
+      document.getElementById("secretMessage").classList.add("show");
+  };
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 13000);
+}, 1000);
+
+document.getElementById("secretMessage").onclick = () => {
+  document.getElementById("secretMessage").classList.remove("show");
+  heartClicks = 0;
+};
+
+function toggleMusic() {
+  const iframe = document.getElementById("music");
+  iframe.src = muted
+    ? "https://www.youtube.com/embed/slva-QsmjL4?autoplay=1&mute=0&loop=1&playlist=slva-QsmjL4"
+    : "https://www.youtube.com/embed/slva-QsmjL4?autoplay=1&mute=1&loop=1&playlist=slva-QsmjL4";
+  muted = !muted;
+}
+</script>
+
+</body>
+</html>
